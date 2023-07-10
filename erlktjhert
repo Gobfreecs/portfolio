@@ -1,3 +1,23 @@
+/* .color1 {color: #122b3d;}
+.color2 {color: #155d8e;}
+.color3 {color: #e36235;}
+.color4 {color: #ecc65c;}
+.color5 {color: #f8efba;}
+
+
+.color1 {color: #15171e;}
+.color2 {color: #283845;}
+.color3 {color: #406476;}
+.color4 {color: #5e99ad;}
+.color5 {color: #80dee5;} 
+
+.color1 {color: #ffaf97;}
+.color2 {color: #ffd283;}
+.color3 {color: #001681;}
+.color4 {color: #0067c8;}
+.color5 {color: #99cfff;}
+*/
+
 body {
     max-width: 1400px;
     margin: auto;

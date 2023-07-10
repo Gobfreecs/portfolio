@@ -10,10 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a35c26650.js" crossorigin="anonymous"></script>
+    <script src="assets/scrypt.js"></script>
 </head>
 <body>
-
-</body>
     <div class="top-header">
         <div>
             <h3 class="name">Pierre Louis MARIE</h3>
@@ -39,7 +38,7 @@
         </div>
         <div class="about-right">
             <div class="me">
-                <h3 class="tittle">A propos de moi:</h3>
+                <h3 class="title">A propos de moi:</h3>
                 <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
                 Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
                 quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. 
@@ -48,8 +47,8 @@
                 et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
             </div>
             <div class="CV">
-                <a href="./assets/images/CV_PierreLouisMARIE.png" target="_blank"><button class="title">Consulter mon CV</button></a>
-                <a href="#contact"><button class="title">Me contacter!</button></a>
+                <a href="./assets/images/CV_PierreLouisMARIE.png" target="_blank"><button>Consulter mon CV</button></a>
+                <a href="#contact"><button>Me contacter!</button></a>
             </div>
     </div>
 </div>
@@ -82,21 +81,60 @@
         <h3 class="title">Projets:</h3>
 		<div class="container py-3">
 			<div class="gallery">
-				<img class="gallery-item" alt="Image du site d'une librairie"
+                <div class="gallery-item">
+				<img alt="Image du site d'une librairie"
 					src="./assets/images/gallery/monvieuxgrimoire.png" loading="lazy" />
-                <img class="gallery-item" alt="Photo du portfolio d'une photographe"
+                    <div class="overlay">
+                        <div class="description-text"> 
+                            <div>
+                                <h4 class="title">Mon vieux grimoire</h4>
+                                <p>L'ojectif de ce projet a été créer le back end de cette application</p>
+                            </div>
+                            <div>
+                                >Technologies utilisées pour ce projet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                <img alt="Photo du portfolio d'une photographe"
 					src="./assets/images/gallery/ninacarducci.png" loading="lazy" />
-                <img class="gallery-item" alt="Photo du site booki. Un site le location de logement."
+                    <div class="overlay">
+                        <div class="description-text"> 
+                            <div>
+                                <h4 class="title">Portfolio de Nina Carducci</h4>
+                                <p>L'ojectif de ce projet a été d'optimiser et debugger le site.</p>
+                            </div>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                <img alt="Photo du site booki. Un site le location de logement."
 					src="./assets/images/gallery/booki.png" loading="lazy" />
+                    <div class="overlay">
+                        <div class="description-text"> 
+                            <div>
+                                <h4 class="title">Booki</h4>
+                                <p>Premier projet de la formation Openclassroom. L'objectif a été de créer le visuel du site en langage hmtl et css.</p>
+                            </div>
+                            <div>
+                                <h5 class="title">Technologies utilisées:</h5> </br>
+                                <i class="fa-brands fa-html5 fa-2xl"></i> HTML et <i class="fa-brands fa-css3 fa-2xl"></i> CSS</p>
+                            </div>
+                        </div>
+                </div>
 			</div>
 		</div>
 
     </div>
-
+</div>
     <div id="contact">
         <div class="container">
 			<div class="form-container">
-				<strong>Vous souhaitez me contacter? Une question?</strong>
+				<strong class="title">Vous souhaitez me contacter? Une question?</strong>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures.</p>
 				<form action="" method="post">
 					<label for="nom">Nom</label>
@@ -110,5 +148,5 @@
 			</div>
 		</div>
     </div>
-
+</body>
 </html>

@@ -1,0 +1,23 @@
+body {
+    max-width: 1400px;
+    margin: auto;
+    row-gap: 10px;
+}
+
+.top-header {
+    background-color: #f8efba;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 100px;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 0;
+}
