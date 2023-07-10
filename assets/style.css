@@ -204,6 +204,7 @@ body {
     flex-wrap: wrap;
     row-gap: 25px;
     width: 80%;
+    padding-bottom: 15px;
 }
 
 #Portofolio {
