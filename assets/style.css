@@ -123,12 +123,12 @@ body {
 }
 
 .img-bg {
-    height: 750px;
-    background-image: url('./images/C2GPC1ZSsqJfE7mzrmAV_4-pillars-of-teamwork.jpeg');
+    height: 850px;
+    background-image: url('./images/img-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(5px);
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(2px);
 }
 
 .quote-text {
@@ -141,17 +141,16 @@ body {
     position: absolute;
     top: 50%;
     left: 60%;
-    transform: translate(-65%, -50%);
+    transform: translate(-65%, -30%);
     z-index: 2;
     width: 60%;
     padding: 30px;
 }
 
 .header h1 {
-    text-indent: -280px;
-    transform: translate(315px, 0px);
     font-family: 'Indie Flower';
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .header p {
@@ -196,6 +195,7 @@ body {
 }
 
 .me {
+    border: black solid 3px;
     box-shadow: 5px 5px 5px #122b3d;
     background-color: rgba(255, 255, 255, 0.6);
     padding-left: 8px;
@@ -267,7 +267,7 @@ body {
     width: 700px;
     height: 350px;
     margin: 10px;
-    border: #000 dotted 2px;
+    border: #000 solid 3px;
     border-radius: 20px;
 }
 
@@ -290,7 +290,7 @@ body {
 }
 
 .gallery-item:hover {
-    border: #000 solid 2px;
+    border: #000 solid 3px;
 }
 
 .gallery-item:hover .overlay {
@@ -396,11 +396,15 @@ input[type="submit"]:hover {
     }
 
     .gallery-item:active {
-        border: #000 solid 2px;
+        border: #000 solid 3px;
     }
 
     .gallery-item:active .overlay {
         opacity: 1;
+    }
+
+    .gallery h4 {
+        font-size: 0.5em;
     }
 
     .description-text {
@@ -429,6 +433,11 @@ input[type="submit"]:hover {
 @media all and (max-width:1000px) {
     .nav li {
         font-size: 1em;
+    }
+
+    .header h1 {
+        text-indent: 0px;
+        transform: translate(0px, 0px);
     }
 
     #about {
