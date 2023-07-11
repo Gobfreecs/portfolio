@@ -122,6 +122,45 @@ body {
     height: 30px;
 }
 
+.img-bg {
+    height: 750px;
+    background-image: url('./images/C2GPC1ZSsqJfE7mzrmAV_4-pillars-of-teamwork.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.quote-text {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-65%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 30px;
+}
+
+.header h1 {
+    text-indent: -280px;
+    transform: translate(315px, 0px);
+    font-family: 'Indie Flower';
+    letter-spacing: 2px;
+}
+
+.header p {
+    font-size: 20px;
+    font-family: 'Indie Flower';
+    letter-spacing: 2px;
+    text-align: right;
+}
+
 .banner img {
     height: 200px;
     width: 100%;
