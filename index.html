@@ -10,8 +10,8 @@
         j'ai décidé de me reconvertir dans le développement informatique.">
 	<meta property="og:title" content="Pierre Louis MARIE Développeur web junior" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://www.ninacarducci.fr/" />
-	<meta property="og:image" content="http://ninacarducci.fr/assets/images/nina.webp" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
 	<meta property="og:description"
 		content="Après plusieurs années à travailler dans la restauration en tant que barman puis chef de bar,
         j'ai décidé de me reconvertir dans le développement informatique." />
@@ -22,7 +22,7 @@
 		content="Après plusieurs années à travailler dans la restauration en tant que barman puis chef de bar,
         j'ai décidé de me reconvertir dans le développement informatique.">
 	<meta name="twitter:creator" content="">
-	<meta name="twitter:image" content="http://ninacarducci.fr/assets/images/ninamini.jpg">
+	<meta name="twitter:image" content="">
     <link async rel="stylesheet" href="./assets/style.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a35c26650.js" crossorigin="anonymous"></script>
     <script src="assets/scrypt.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
 </head>
 <body>
     <div class="top-header">
@@ -42,7 +43,7 @@
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#Portofolio">Projets</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="www.linkedin.com/in/pierre-louis-marie-81059b1b3"
+				<li><a class="social-link" href="www.linkedin.com/in/pierrelouis-marie"
 						target="_blank"><img src="assets/images/linkedin_icon.png" alt="Logo linkedin" loading="lazy"></a></li>
 			</ul>
 		</div>
@@ -55,9 +56,9 @@
         </div>
 	</div>
 
-    <div id="about">
+<div id="about">
         <div class="photo-me">
-            <img alt="Photo Pierre Louis" src="./assets/images/me.jpg">
+            <img alt="Photo Pierre Louis" src="./assets/images/me.png">
         </div>
         <div class="about-right">
             <div class="me">
@@ -115,12 +116,13 @@
 			<div class="gallery">
                 <div class="gallery-item">
 				<img alt="Image du site d'une librairie"
-					src="./assets/images/gallery/monvieuxgrimoire.png" loading="lazy" />
+					src="./assets/images/gallery/monvieuxgrimoire-min.webp" loading="lazy" />
                     <div class="overlay">
                         <div class="description-text"> 
                             <div>
                                 <p class="title">Mon vieux grimoire</p>
-                                <p></p>
+                                <p>Création du back end d'un site de référencement de livres, 
+                                    création de l'api, gestion de la base de donnée.</p>
                             </div>
                             <div>
                                 <p class="title">Technologies utilisées pour ce projet</p>
@@ -131,12 +133,12 @@
                 </div>
                 <div class="gallery-item">
                     <img alt=""
-                        src="./assets/images/gallery/kasa.png" loading="lazy" />
+                        src="./assets/images/gallery/kasa-min.webp" loading="lazy" />
                         <div class="overlay">
                             <div class="description-text"> 
                                 <div>
                                     <p class="title">Kasa</p>
-                                    <p></p>
+                                    <p>Création du front end d'une application de location immobilière à l'aide de React.</p>
                                 </div>
                                 <div>
                                     <p class="title">Technologies utilisées pour ce projet</p>
@@ -147,7 +149,7 @@
                     </div>
                 <div class="gallery-item">
                 <img alt="Photo du portfolio d'une photographe"
-					src="./assets/images/gallery/ninacarducci.png" loading="lazy" />
+					src="./assets/images/gallery/ninacarducci-min.webp" loading="lazy" />
                     <div class="overlay">
                         <div class="description-text"> 
                             <div>
@@ -168,7 +170,7 @@
                 </div>
                 <div class="gallery-item">
                     <img alt="Site vitrine d'une architecte d'intérieur"
-                        src="./assets/images/gallery/sophiebluel.png " loading="lazy" />
+                        src="./assets/images/gallery/sophiebluel-min.webp " loading="lazy" />
                         <div class="overlay">
                             <div class="description-text"> 
                                 <div>
@@ -184,7 +186,7 @@
                 </div>
                 <div class="gallery-item">
                 <img alt="Photo du site booki. Un site le location de logement."
-					src="./assets/images/gallery/booki.png" loading="lazy" />
+					src="./assets/images/gallery/booki-min.webp" loading="lazy" />
                     <div class="overlay">
                         <div class="description-text"> 
                             <div>
@@ -207,15 +209,18 @@
         <div class="form-container">
             <strong class="title">Vous souhaitez me contacter? Une question?</strong>
             <p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures.</p>
-            <form action="" method="post">
+            <form id="contact-form" action="" method="post">
                 <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom">
+                <input type="text" name="nom" id="nom" required>
+              
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
+              
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Envoyer" />
-            </form>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+              
+                <input type="submit" value="Envoyer">
+              </form>
         </div>
     </div>
 </div>
