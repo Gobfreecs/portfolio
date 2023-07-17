@@ -311,6 +311,18 @@ body {
     font-size: 0.5em;
 }
 
+.alltech {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech {
+    font-size: 1em;
+    background-color: #A8A87B;
+    padding: 10px;
+}
+
 #contact .container {
     display: flex;
     justify-content: center;
