@@ -81,7 +81,7 @@ body {
 }
 
 .top-header {
-    background-color: #ffd283;
+    background-color: #F5F5C9;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -124,7 +124,7 @@ body {
 
 .img-bg {
     height: 850px;
-    background-image: url('./images/img-bg.jpg');
+    background-image: url('./images/bg-img2.webp');
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(5px);
@@ -174,7 +174,7 @@ body {
     height: 400px;
     width: 100%;
     gap: 5%;
-    background-color: #0067c8;
+    background-color: #F5F5C9;
 }
 
 .photo-me img {
@@ -196,7 +196,7 @@ body {
 
 .me {
     border: black solid 3px;
-    box-shadow: 5px 5px 5px #122b3d;
+    box-shadow: 5px 5px 5px #A8A87B;
     background-color: rgba(255, 255, 255, 0.6);
     padding-left: 8px;
     padding-right: 8px;
@@ -215,7 +215,7 @@ body {
     border-radius: 25px;
     width: 150px;
     padding: 10px;
-    box-shadow: 5px 5px 5px #122b3d;
+    box-shadow: 5px 5px 5px #A8A87B;
 }
 
 .CV button:hover {
@@ -234,7 +234,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-
+    background-color: #F5F5C9;
 }
 
 .Competences {
@@ -247,6 +247,7 @@ body {
     row-gap: 25px;
     width: 80%;
     padding-bottom: 15px;
+
 }
 
 #Portofolio {
@@ -255,7 +256,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    background-color: #e36235;
+    background-color: #8868A8;
 }
 
 .gallery {
@@ -313,7 +314,7 @@ body {
 #contact .container {
     display: flex;
     justify-content: center;
-    background-color: #0aa1dd;
+    background-color: #F5F5C9;
     padding-top: 10px;
 }
 
@@ -331,13 +332,13 @@ form input {
     border: solid 1px;
     height: 2.5em;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px #064e6a;
+    box-shadow: 5px 5px 5px #A8A87B;
 }
 
 form textarea {
     width: 100%;
     background-color: white;
-    box-shadow: 5px 5px 5px #064e6a;
+    box-shadow: 5px 5px 5px #A8A87B;
     border: solid 1px;
     height: 5em;
     line-height: 2.5em;
@@ -477,7 +478,6 @@ input[type="submit"]:hover {
     #contact .container {
         display: flex;
         justify-content: center;
-        background-color: #0aa1dd;
         padding: 10px;
     }
 
