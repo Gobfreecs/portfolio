@@ -81,7 +81,7 @@ body {
 }
 
 .top-header {
-    background-color: #F5F5C9;
+    background-color: #f8efed;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -126,6 +126,7 @@ body {
     height: 850px;
     background-image: url('./images/bg-img2.webp');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     filter: blur(5px);
     -webkit-filter: blur(2px);
@@ -169,12 +170,30 @@ body {
 
 #about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    padding-top: 20px;
     width: 100%;
     gap: 5%;
-    background-color: #F5F5C9;
+    background-color: #f8efed;
+    padding-bottom: 20px;
+}
+
+.aboutDesc {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 25px;
 }
 
 .photo-me img {
@@ -182,7 +201,7 @@ body {
     height: 300px;
     border-radius: 200px;
     object-fit: cover;
-    box-shadow: 5px 5px 5px #000000;
+    border: 3px solid black;
 }
 
 .about-right {
@@ -194,14 +213,7 @@ body {
     row-gap: 15px;
 }
 
-.me {
-    border: black solid 3px;
-    box-shadow: 5px 5px 5px #A8A87B;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 25px;
-}
+.me {}
 
 .CV {
     display: flex;
@@ -210,16 +222,15 @@ body {
 }
 
 .CV button {
-    background-color: #f8efba;
+    background-color: #2081d8;
     border: 1px solid black;
     border-radius: 25px;
     width: 150px;
     padding: 10px;
-    box-shadow: 5px 5px 5px #A8A87B;
 }
 
 .CV button:hover {
-    background-color: #ecc65c;
+    background-color: #d0e1ed;
 }
 
 .comp-icon {
@@ -234,7 +245,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #F5F5C9;
 }
 
 .Competences {
@@ -247,7 +257,6 @@ body {
     row-gap: 25px;
     width: 80%;
     padding-bottom: 15px;
-
 }
 
 #Portofolio {
@@ -255,8 +264,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #8868A8;
+    background-color: #d0e1ed;
 }
 
 .gallery {
@@ -288,7 +298,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
     border-radius: 15px;
 }
@@ -297,9 +307,9 @@ body {
     border: #000 solid 3px;
 }
 
-.gallery-item:hover .overlay {
-    opacity: 1;
-}
+/* .gallery-item:hover .overlay {
+    opacity: 0;
+} */
 
 .description-text {
     text-align: center;
@@ -318,15 +328,17 @@ body {
 }
 
 .tech {
+    color: black;
     font-size: 1em;
-    background-color: #A8A87B;
+    background-color: #f8efed;
     padding: 10px;
+    border-radius: 15px;
 }
 
 #contact .container {
     display: flex;
     justify-content: center;
-    background-color: #F5F5C9;
+    background-color: #f8efed;
     padding-top: 10px;
 }
 
@@ -344,13 +356,11 @@ form input {
     border: solid 1px;
     height: 2.5em;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px #A8A87B;
 }
 
 form textarea {
     width: 100%;
     background-color: white;
-    box-shadow: 5px 5px 5px #A8A87B;
     border: solid 1px;
     height: 5em;
     line-height: 2.5em;
@@ -362,12 +372,12 @@ input[type="submit"] {
     border-radius: 25px;
     width: 25%;
     border: 1px solid black;
-    background-color: #f8efba;
+    background-color: #2081d8;
     padding: .5em 1em;
 }
 
 input[type="submit"]:hover {
-    background-color: #ecc65c;
+    background-color: #d0e1ed;
 }
 
 @media all and (max-width:1000px) {
@@ -378,6 +388,7 @@ input[type="submit"]:hover {
     .header h1 {
         text-indent: 0px;
         transform: translate(0px, 0px);
+        font-size: 20px;
     }
 
     .quote-text {
@@ -445,6 +456,14 @@ input[type="submit"]:hover {
         transform: translate(-62%, -30%);
     }
 
+    .aboutDesc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
     .about-right {
         row-gap: 15px;
     }
@@ -475,8 +494,10 @@ input[type="submit"]:hover {
         border: #000 solid 3px;
     }
 
-    .gallery-item:active .overlay {
-        opacity: 1;
+    .overlay {
+        left: 0px;
+        width: 100%;
+        border-radius: 15px;
     }
 
     .gallery h4 {
@@ -484,7 +505,17 @@ input[type="submit"]:hover {
     }
 
     .description-text {
+        display: flex;
+        gap: 5px;
         padding: 10px;
+    }
+
+    .alltech {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1px;
     }
 
     #contact .container {
@@ -499,5 +530,13 @@ input[type="submit"]:hover {
 
     .Competences {
         max-width: 630px;
+    }
+
+    .techZone {
+        width: 50%;
+    }
+
+    .descriptionZone {
+        width: 50%;
     }
 }
