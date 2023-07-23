@@ -506,6 +506,7 @@ a {
         transform: translate(0px, -15px);
         gap: 5px;
         padding: 10px;
+        font-size: 0.9em;
     }
 
     .alltech {
