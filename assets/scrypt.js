@@ -1,29 +1,28 @@
-emailjs.init('your-user-id');
+document.addEventListener("DOMContentLoaded", function () {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    const modal = document.querySelector(".modal");
+    const modalContent = document.querySelector(".modal-content");
+    const modalDescription = document.querySelector(".modal-description .description-text");
+    const closeBtn = document.querySelector(".close");
 
+    galleryItems.forEach(item => {
+        item.addEventListener("click", function () {
+            const imageSrc = item.querySelector("img").src;
+            const descriptionContent = item.querySelector(".description-text").innerHTML;
 
-const form = document.getElementById('contact-form');
-
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-
-    const formData = new FormData(form);
-
-
-    const templateParams = {
-        from_name: formData.get('nom'),
-        from_email: formData.get('email'),
-        message: formData.get('message'),
-    };
-
-
-    emailjs.send('usxPP4_4jYzP7r7au', '_WHIEt1250Yf78xUpNq2w', templateParams)
-        .then((response) => {
-            console.log('Email sent:', response.status, response.text);
-            form.reset();
-        })
-        .catch((error) => {
-            console.error('Error sending email:', error);
+            modal.style.display = "block";
+            modalContent.src = imageSrc;
+            modalDescription.innerHTML = descriptionContent;
         });
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 });
