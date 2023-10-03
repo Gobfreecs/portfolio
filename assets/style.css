@@ -385,4 +385,8 @@ button {
         height: 710px;
         width: 70%;
     }
+
+    #closeBtn {
+        margin: 20px;
+    }
 }
