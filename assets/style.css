@@ -366,7 +366,6 @@ button {
 
 @media all and (max-width:800px) {
     .top-header {
-        padding: 10px;
         flex-direction: column;
         row-gap: 20px;
         height: 120px;
