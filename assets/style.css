@@ -44,6 +44,7 @@ ul {
     display: flex;
     list-style-type: none;
     align-items: center;
+    padding: 0px;
 }
 
 li {
@@ -86,7 +87,7 @@ button {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    width: 1400px;
+    width: 100%;
     gap: 5%;
     padding-bottom: 20px;
     padding-top: 40px;
@@ -227,7 +228,7 @@ button {
 }
 
 #gallery {
-    width: 1400px;
+    width: 80%;
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -269,6 +270,10 @@ button {
 #closeBtn {
     align-self: flex-end;
     margin: 10px;
+}
+
+#closeBtn :hover {
+    cursor: pointer;
 }
 
 .modal-content {
@@ -337,4 +342,48 @@ button {
 #contact ul {
     flex-direction: column;
     row-gap: 20px;
+}
+
+@media all and (max-width:1000px) {
+    .Competences {
+        width: 80%;
+    }
+
+    .modal {
+        padding: 30px;
+    }
+
+    .modal-content {
+        left: 47%;
+
+    }
+
+    #gallery {
+        width: 100%;
+
+    }
+}
+
+@media all and (max-width:800px) {
+    .top-header {
+        padding: 10px;
+        flex-direction: column;
+        row-gap: 20px;
+        height: 120px;
+        text-align: center;
+    }
+
+    .aboutDesc {
+        flex-direction: column;
+    }
+
+    #gallery img {
+        width: 100%;
+
+    }
+
+    .modal-content {
+        height: 710px;
+        width: 70%;
+    }
 }
