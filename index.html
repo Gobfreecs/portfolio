@@ -29,38 +29,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a35c26650.js" crossorigin="anonymous"></script>
+	
 </head>
+
 <body>
-    <div class="top-header">
+	<div class="top-header">
         <div class="nameZone">
-            <h3 class="name">Pierre Louis MARIE</h3> 
+            <h1 class="name">Pierre Louis MARIE</h1> 
             <p>Développeur Web Junior</p>
         </div>
 		<div class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
-				<li><a href="#Portofolio">Projets</a></li>
+				<li><a href="#Portfolio">Projets</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="http://www.linkedin.com/in/pierrelouis-marie"
 						target="_blank"><img src="assets/images/linkedin_icon.png" alt="Logo linkedin" loading="lazy"></a></li>
 			</ul>
 		</div>
 	</div>
-    <div class="header">
-        <div class="img-bg"></div>
-        <div class="quote-text">
-            <h1>“Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.”</h1>
-            <p>Jean Dion</p>
-        </div>
-	</div>
-    <div id="about">
+	<div id="about">
         <div class="about-me">
             <div class="aboutDesc">
                 <div class="photo-me">
                     <img alt="Photo Pierre Louis" src="./assets/images/me.webp">
                 </div>
                 <div class="about-right">
-                    <div class="me">
+                    <div class="aboutme">
                         <h3 class="title">À propos de moi :</h3>
                         <p>Après plusieurs années à travailler dans la restauration en tant que barman puis chef de bar, j'ai décidé de me reconvertir dans le développement informatique, un domaine qui m'a toujours attiré.
                             Pour débuter dans cet univers , j’ai suivi la formation développeur web d'Openclassroom, qui m'a permis de découvrir certains langages du web, et leurs utilisation à travers huit projets : 2 d’entre-eux concernaient de la gestion et organisation de projet, les 5 suivants sont consultables ci-dessous (mettre lien qui amène direct au projet) et le 8ème est le site internet sur lequel vous lisez ces lignes.
@@ -76,155 +71,63 @@
             <div class="center">
                     <h3 class="title">Mes compétences :</h3>
                     <div class="Competences">
+                        <div class="pie animate no-round" style="--p:80;--c:#C43F35;">
                         <div class="comp-icon">
-                        <div class="pie animate no-round" style="--p:80;--c:#2081d8;">
-                        <i class="fa-brands fa-html5 fa-2xl"></i>
-                            <p>Html5</p> 80% </div>
+                            <i class="fa-brands fa-html5 fa-2xl"></i>
+                            <p>Html5</p> 
+                            <p>80%</p>
                         </div>
-                        <div class="comp-icon">
-                        
-                        <div class="pie animate no-round" style="--p:80;--c:#2081d8;"> 
+                        </div>
+                        <div class="pie animate no-round" style="--p:80;--c:#C43F35;"> 
+                            <div class="comp-icon">
                             <i class="fa-brands fa-css3 fa-2xl"></i>
-                            <p>CSS3</p>80%</div>
+                            <p>CSS3</p><p>80%</p>
                         </div>
-                        <div class="comp-icon">
-                            <div class="pie animate no-round" style="--p:50;--c:#2081d8;"> 
+                        </div>
+                            <div class="pie animate no-round" style="--p:50;--c:#C43F35;"> 
+                            <div class="comp-icon">
                                 <i class="fa-brands fa-react fa-2xl"></i>
-                                <p>React</p>50%</div>
+                                <p>React</p><p>50%</p></div>
                             </div>
-                        <div class="comp-icon">
-                        <div class="pie animate no-round" style="--p:50;--c:#2081d8;"> 
+                        <div class="pie animate no-round" style="--p:50;--c:#C43F35;">
+                            <div class="comp-icon">
                             <i class="fa-brands fa-square-js fa-2xl"></i>
-                            <p>Javascript </p>50%</div>
+                            <p>Javascript </p><p>50%</p>
                         </div>
-                        <div class="comp-icon">
-                        <div class="pie animate no-round" style="--p:60;--c:#2081d8;"> 
+                        </div>
+                        <div class="pie animate no-round" style="--p:60;--c:#C43F35;"> 
+                            <div class="comp-icon">
                             <i class="fa-brands fa-node-js fa-2xl"></i>
-                            <p>Node JS</p>60%</div>
+                            <p>Node JS</p><p>60%</p></div>
                         </div>
                     </div>
             </div>
         </div>
     </div>
-    <div id="Portofolio">
-            <div class="container py-3">
-                <h3 class="title">Projets :</h3>
-                <div class="gallery">
-                    <a href="https://github.com/Gobfreecs/Mon_Vieux_Grimoire" target="_blank"><div class="gallery-item">
-                    <img alt="Image du site d'une librairie"
-                        src="./assets/images/gallery/monvieuxgrimoire-min.webp" loading="lazy" />
-                        <div class="overlay">
-                            <div class="description-text"> 
-                                <div class="descriptionZone">
-                                    <p><span class="title">MON VIEUX GRIMOIRE</span><br><span class="underTitle">Élaboration du back-end d’un site de notation de livres</span></p>
-                                    <p>
-                                        Génération d’une base de données<br>
-                                        Création de l’API</p>
-                                </div>
-                                <div class="techZone">
-                                    <p>Technologies utilisées :</p>
-                                    <div class="alltech">
-                                    <span class="tech">Node Js</span><span class="tech">MongoDB</span>
-                                    </div>
-                                </div>
-                                <p>J’ai fait une erreur dans mon code, qui était due à un oubli de majuscule. J’ai mis du temps à m’en rendre compte, mais j’ai fini par trouver la solution après en avoir discuté avec d’autres développeurs.</p>
-                            </div>
-                        </div>
-                    </div></a>
-                    <a href="https://github.com/Gobfreecs/kasa" target="_blank"><div class="gallery-item">
-                        <img alt=""
-                            src="./assets/images/gallery/kasa-min.webp" loading="lazy" />
-                            <div class="overlay">
-                                <div class="description-text"> 
-                                    <div class="descriptionZone">
-                                        <p><span class="title">KASA</span><br><span class="underTitle">Création d’une application de location immobilière </span></p>
-                                        <p>
-                                            Étude et découpage de la maquette<br>
-                                            Développement de l’application à l’aide de React</p>
-                                    </div>
-                                    <div class="techZone">
-                                            <p>Technologies utilisées :</p>
-                                            <div class="alltech">
-                                                <span class="tech">React</span>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></a>
-                    <a href="https://github.com/Gobfreecs/nina-carducci" target="_blank"><div class="gallery-item">
-                    <img alt="Photo du portfolio d'une photographe"
-                        src="./assets/images/gallery/ninacarducci-min.webp" loading="lazy" />
-                        <div class="overlay">
-                            <div class="description-text">
-                                <div class="descriptionZone">
-                                    <p><span class="title">PORTFOLIO DE NINA CARDUCCI</span><br><span class="underTitle">Debug et optimisation du site web d’une photographe</span></p>
-                                    <p>
-                                        Amélioration des performances et du référencement SEO<br>
-                                        Débug et réparation des éléments non fonctionnels <br>
-                                        Création d'un rapport d’intervention
-                                    </p>
-                                </div>
-                                <div class="techZone">
-                                    <p>Technologies utilisées :</p>
-                                    <div class="alltech">
-                                        <span class="tech">Javascript</span>
-                                        <span class="tech">Google Lighthouse</span> <span class="tech">Wave Evaluation tool</span>
-                                    </div>
-                                </div>
-                                <p>L'audit de performances était très instable en local et me donnait des résultats différents d'un test à l'autre. Le problème a été résolu après la mise en ligne du site.</p>
-                            </div>
-                        </div>
-                    </div></a>
-                    <a href="https://github.com/Gobfreecs/Portfolio_SophieBLUEL" target="_blank"><div class="gallery-item">
-                        <img alt="Site vitrine d'une architecte d'intérieur"
-                            src="./assets/images/gallery/sophiebluel-min.webp " loading="lazy" />
-                            <div class="overlay">
-                                <div class="description-text"> 
-                                    <div class="descriptionZone">
-                                        <p><span class="title"> VITRINE DE SOPHIE BLUEL</span><br><span class="underTitle">Amélioration du portfolio d’une architecte d’intérieur</span></p>
-                                        <p>
-                                            Développement d’un site dynamique à l’aide de HTML, CSS et Javascript <br>(modale, système d’authentification…)<br>
-                                            Importation d’éléments depuis une base de données</p>
-                                    </div>
-                                    <div class="techZone">
-                                        <p>Technologies utilisées :</p>
-                                        <div class="alltech">
-                                            <span class="tech">HTML 5</span> <span class="tech">CSS3</span><span class="tech">Javascript</span>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div></a>
-                    <a href="https://github.com/Gobfreecs/Projet-Booki" target="_blank"><div class="gallery-item">
-                    <img alt="Photo du site booki. Un site le location de logement."
-                        src="./assets/images/gallery/booki-min.webp" loading="lazy" />
-                        <div class="overlay">
-                            <div class="description-text"> 
-                                <div class="descriptionZone">
-                                    <p><span class="title">BOOKI</span><br><span class="underTitle">Création d’une page d'accueil d'une agence de voyage </span></p>
-                                    <p>
-                                        Développement de l’affichage responsive d’une page web HTML et CSS</p>
-                                </div>
-                                <div class="techZone">
-                                    <p>Technologies utilisées :</p>
-                                    <div class="alltech">
-                                        <span class="tech">HTML 5</span> <span class="tech">CSS3</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div></a>
-                </div>
-            </div>
-    </div>
-    </div>
+	<div id="Portfolio">
+		<div id="filters"></div>
+		<div id="gallery"></div>
+		<div id="modal" class="modal">
+			<div class="modal-content">
+                <span id="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+				<img id="modal-image" src="" alt="Projet">
+				<div class="modal-content-right">
+					<h2 id="modal-title"></h2>
+					<p id="modal-description"></p>
+                    <p id="modal-technologies"></p>
+                    <span id="modal-githublink"></span>
+				</div>
+			</div>
+		</div>	
+	</div>
     <div id="contact">
-                <strong class="title">Vous souhaitez me contacter ? Une question ?</strong>
-                <ul>
-                    <li><a href="mailto:plmariepro@gmail.com" >plmariepro@gmail.com</a></li>
-                    <li><a class="social-link" href="http://www.linkedin.com/in/pierrelouis-marie"
-                        target="_blank"><img src="assets/images/linkedin_icon.png" alt="Logo linkedin" loading="lazy"></a></li>
-                </ul>
+        <strong class="title">Vous souhaitez me contacter ? Une question ?</strong>
+        <ul>
+            <li><a href="mailto:plmariepro@gmail.com" >plmariepro@gmail.com</a></li>
+            <li><a class="social-link" href="http://www.linkedin.com/in/pierrelouis-marie"
+                target="_blank"><img src="assets/images/linkedin_icon.png" alt="Logo linkedin" loading="lazy"></a></li>
+        </ul>
     </div>
+	<script src="./assets/script.js"></script>
 </body>
 </html>

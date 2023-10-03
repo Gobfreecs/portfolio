@@ -1,0 +1,98 @@
+{
+    "project": [
+        {
+            "id": 1,
+            "title": "Mon Vieux Grimoire",
+            "imageUrl": "./assets/images/gallery/monvieuxgrimoire-min.png",
+            "imageAlt": "Image du site Mon vieux grimoire",
+            "description": "Élaboration du back-end d’un site de notation de livres.",
+            "type": [
+                {
+                    "typeName": "Backend",
+                    "typeID": "2"
+                }
+            ],
+            "technologies_used": [
+                "Node.js",
+                "MongoDB"
+            ],
+            "note": "You encountered an error in your code that was due to a missing capitalization. It took some time, but you eventually found the solution after discussing it with other developers.",
+            "github_link": "https://github.com/Gobfreecs/Mon_Vieux_Grimoire"
+        },
+        {
+            "id": 2,
+            "title": "Kasa",
+            "imageUrl": "./assets/images/gallery/kasa-min.png",
+            "imageAlt": "Image du site Kasa",
+            "description": "Création d’une application de location immobilière.",
+            "type": [
+                {
+                    "typeName": "Frontend",
+                    "typeID": "1"
+                }
+            ],
+            "technologies_used": [
+                "React",
+                "Javascript"
+            ],
+            "github_link": "https://github.com/Gobfreecs/kasa"
+        },
+        {
+            "id": 3,
+            "title": "Portfolio de Nina Carducci",
+            "imageUrl": "./assets/images/gallery/ninacarducci-min.png",
+            "imageAlt": "Image du Portfolio de Nina Carducci",
+            "description": "Debug et optimisation du site web d’une photographe.",
+            "type": [
+                {
+                    "typeName": "Optimisation",
+                    "typeID": "3"
+                }
+            ],
+            "technologies_used": [
+                "JavaScript",
+                "Google Lighthouse",
+                "Wave Evaluation tool"
+            ],
+            "note": "L'audit de performances était très instable en local et me donnait des résultats différents d'un test à l'autre. Le problème a été résolu après la mise en ligne du site.",
+            "github_link": "https://github.com/Gobfreecs/nina-carducci"
+        },
+        {
+            "id": 4,
+            "title": "Vitrine de Sophie Bluel",
+            "imageUrl": "./assets/images/gallery/sophiebluel-min.png",
+            "imageAlt": "Image du site vitrine de Sophie Bluel",
+            "description": "Amélioration du portfolio d’une architecte d’intérieur.",
+            "type": [
+                {
+                    "typeName": "Frontend",
+                    "typeID": "1"
+                }
+            ],
+            "technologies_used": [
+                "HTML5",
+                "CSS3",
+                "JavaScript"
+            ],
+            "github_link": "https://github.com/Gobfreecs/Portfolio_SophieBLUEL"
+        },
+        {
+            "id": 5,
+            "title": "Booki",
+            "imageUrl": "./assets/images/gallery/booki-min.png",
+            "imageAlt": "Image du site Booki",
+            "description": "Création d’une page d'accueil d'une agence de voyage.",
+            "type": [
+                {
+                    "typeName": "Frontend",
+                    "typeID": "1"
+                }
+            ],
+            "technologies_used": [
+                "HTML5",
+                "CSS3"
+            ],
+            "github_link": "https://github.com/Gobfreecs/Projet-Booki"
+        }
+    ]
+}
